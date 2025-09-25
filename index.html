@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNCCD COP16 Riyadh</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar {
+  background-color: #28a745 !important; /* vert */
+}
+    
+    .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+     
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      .navbar-brand img {
+        height: 24px;
+        margin-left: 6px;
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+    position: relative;
+    height: 80vh; /* hauteur relative à la fenêtre */
+    min-height: 500px; /* minimum pour petits écrans */
+    background-image: url('imagee/cop.png'); /* changer l'image ici */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* pour empiler le texte et boutons */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 5% 10%; /* padding relatif pour s’adapter aux écrans */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+    .hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* s’adapte à la taille de l’écran */
+    margin-bottom: 20px;
+    }
+    .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 30px;
+}
+/* Bouton responsive */
+.hero .btn {
+    padding: 10px 25px;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    background-color: #4CAF50; /* couleur modifiable */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #45a049;
+}
+ .hover-scale {
+    transition: transform 0.3s;
+  }
+  .hover-scale:hover {
+    transform: scale(1.1);
+  }
+  .ratio iframe {
+    transition: transform 0.3s;
+  }
+  .ratio iframe:hover {
+    transform: scale(1.02);
+  }
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        padding: 5% 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+        padding: 5% 3%;
+    }
+}
+    
+    section {
+      padding: 60px 20px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">UNCCD COP16
+      <img src="imagee/logos.png" alt="Logo 1" style="height:70px; margin-left:10px;">
+      <img src="imagee/logoss.png" alt="Logo 2" style="height:70px; margin-left:10px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="#side-events">Side Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#documentation">Documentation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#films">Films</a></li>
+        <li class="nav-item"><a class="nav-link" href="#social-media">Social Media</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+</header>
+<!-- Program Section -->
+<!-- PROGRAM SECTION -->
+<section id="program" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4" style="color: #40be64;">Program</h2>
+    <p class="mb-4 text-secondary">Details about the official program of the 10th World Water Forum.</p>
+
+    <input type="checkbox" id="toggle-program" style="display:none;" />
+
+    <label for="toggle-program" class="btn btn-success btn-lg px-4" style="border-radius: 30px; font-weight: 600; cursor: pointer;">
+      Découvrir le programme
+    </label>
+    <!-- Side Events Section -->
+<section id="side-events" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Side Events</h2>
+    <div class="row justify-content-center">
+
+      <!-- Version Française -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <img src="imagee/FL FR.png" alt="FR" width="80" class="mb-3 mx-auto d-block">
+            <h5 class="card-title">Version Française</h5>
+            <p class="card-text">Consultez le programme des Side Events en français.</p>
+            <a href="document1/side-events-fr.pdf" target="_blank" class="btn btn-primary">Voir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- English Version -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <img src="imagee/FL EN.jpeg" alt="EN" width="80" class="mb-3 mx-auto d-block">
+            <h5 class="card-title">English Version</h5>
+            <p class="card-text">Check out the Side Events program in English.</p>
+            <a href="document1/side-events-en.pdf" target="_blank" class="btn btn-success">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panelists -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <img src="imagee/LG.png" alt="Panelist" width="80" class="mb-3 mx-auto d-block">
+            <h5 class="card-title">Panelists</h5>
+            <p class="card-text">Download session documents:</p>
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <a href="document1/panelists-s1-en.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S1</a>
+              <a href="document1/panelists-s2-en.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S2</a>
+              <a href="document1/panelists-s3-en.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panelistes -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <img src="imagee/LG.png" alt="Panelist" width="80" class="mb-3 mx-auto d-block">
+            <h5 class="card-title">Panelistes</h5>
+            <p class="card-text">Téléchargez les documents des sessions :</p>
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <a href="document1/panelists-s1-fr.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S1</a>
+              <a href="document1/panelists-s2-fr.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S2</a>
+              <a href="document1/panelists-s3-fr.pdf" target="_blank" class="btn btn-outline-success btn-sm rounded-pill">S3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Documentation Section -->
+<!-- SECTION DOCUMENTATION -->
+<section id="documentation" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Documentation</h2>
+
+    <!-- Onglets -->
+    <ul class="nav nav-tabs justify-content-center" id="docTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="docs-tab" data-bs-toggle="tab" data-bs-target="#docs" type="button" role="tab">
+          📄 Documentation
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab">
+          🎥 Vidéos
+        </button>
+      </li>
+    </ul>
+
+    <!-- Contenu des onglets -->
+    <div class="tab-content mt-4" id="docTabsContent">
+
+      <!-- Onglet Documentation -->
+      <div class="tab-pane fade show active" id="docs" role="tabpanel">
+        <div class="row">
+          
+          <!-- Logo 1 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo1.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc1">
+          </div>
+
+          <!-- Modal Logo 1 -->
+          <div class="modal fade" id="modalDoc1" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 1</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li><a href="document1/documentation1/logo1/Development of the protected Areas Network and Biodiversity conversation.pdf" target="_blank">📄Development of the protected Areas Network and Biodiversity conversation</a></li>
+                    <li><a href="document1/documentation1/logo1/GESTION DU RISQUE DES FEUX DE FORETS AU MAROC.pdf" target="_blank">📄GESTION DU RISQUE DES FEUX DE FORETS AU MAROC</a></li>
+                    <li><a href="document1/documentation1/logo1/Watershed Management-Comp.pdf" target="_blank">📄Watershed Management-Comp</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 2 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo2.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc2">
+          </div>
+
+          <!-- Modal Logo 2 -->
+          <div class="modal fade" id="modalDoc2" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li><a href="document1/documentation1/logo2/Bilan Palmeraie.pdf" target="_blank">📄Bilan Palmeraie</a></li>
+                    <li><a href="document1/documentation1/logo2/Brochure.pdf" target="_blank">📄Brochure</a></li>
+                    <li><a href="document1/documentation1/logo2/Chemins Pédagogiques.pdf" target="_blank">📄Chemins Pédagogiques</a></li>
+                    <li><a href="document1/documentation1/logo2/Document 1.pdf" target="_blank">📄Document 1</a></li>
+                    <li><a href="document1/documentation1/logo2/Document 2.pdf" target="_blank">📄Document 2</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 3 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo3.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc3">
+          </div>
+          <div class="modal fade" id="modalDoc3" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 3</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                  ⚠️ Aucune documentation disponible
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 4 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo4.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc4">
+          </div>
+          <div class="modal fade" id="modalDoc4" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 4</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                  ⚠️ Aucune documentation disponible
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 5 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo5.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc5">
+          </div>
+          <div class="modal fade" id="modalDoc5" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 5</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                  ⚠️ Aucune documentation disponible
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 6 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo6.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc6">
+          </div>
+          <div class="modal fade" id="modalDoc6" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 6</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                  ⚠️ Aucune documentation disponible
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Logo 7 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="imagee/logo7.png" class="img-fluid clickable" 
+                 data-bs-toggle="modal" data-bs-target="#modalDoc7">
+          </div>
+          <div class="modal fade" id="modalDoc7" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Documentation - Logo 7</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                  ⚠️ Aucune documentation disponible
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Onglet Vidéos (vide pour l’instant) -->
+      <!-- Onglet Vidéos -->
+<div class="tab-pane fade" id="videos" role="tabpanel">
+  <div class="row">
+
+    <!-- Logo 1 -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo1.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo1">
+    </div>
+    <div class="modal fade" id="videoLogo1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/CRxqgKpCFDQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 2 (aucune vidéo) -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo2.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo2">
+    </div>
+    <div class="modal fade" id="videoLogo2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            ⚠️ Aucune vidéo disponible
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 3 (4 vidéos) -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo3.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo3">
+    </div>
+    <div class="modal fade" id="videoLogo3" tabindex="-1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body row">
+            <div class="col-md-6 mb-3">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/I2zM9pDjgNw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 mb-3">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/vdrXoIPiDqw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 mb-3">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/IOT3amEhgFE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 mb-3">
+              <iframe width="100%" height="250" src="https://www.youtube.com/embed/3-YF2a3YFiM" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 4  -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo4.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo4">
+    </div>
+    <div class="modal fade" id="videoLogo4" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 4</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body text-center">
+            ⚠️ Aucune vidéo disponible
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 5 -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo5.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo5">
+    </div>
+    <div class="modal fade" id="videoLogo5" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/ppCUFUS1HiM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 6 -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo6.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo6">
+    </div>
+    <div class="modal fade" id="videoLogo6" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 6</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/RhszZpNi5jA" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo 7 -->
+    <div class="col-md-3 col-sm-6 mb-4 text-center">
+      <img src="image2/Logo7.png" class="img-fluid clickable" 
+           data-bs-toggle="modal" data-bs-target="#videoLogo7">
+    </div>
+    <div class="modal fade" id="videoLogo7" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vidéos - Logo 7</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/jVX9V6a65T4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ </div>
+  </div>
+</section>
+
+<!-- Films Section -->
+<section id="films" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Films</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 mb-3 mx-auto">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/seS1sud_CtQ"
+                  title="Film 1" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SOCIAL MEDIA SECTION -->
+<section id="social-media" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Social Media</h2>
+    <div class="row justify-content-center text-center">
+
+      <!-- Facebook -->
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.facebook.com/ANEF.Maroc" target="_blank" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 p-3">
+            <i class="fab fa-facebook fa-3x mb-2 text-primary"></i>
+            <h5 class="card-title">Facebook</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.youtube.com/embed/G0mneX_BfQ8" target="_blank" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 p-3">
+            <i class="fab fa-youtube fa-3x mb-2 text-danger"></i>
+            <h5 class="card-title">YouTube</h5>
+          </div>
+        </a>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- Section Finale UNCCD COP16 – ANEF -->
+<section id="unccd-anef" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">UNCCD COP16 – Partenaire ANEF</h2>
+
+    <!-- Logo ANEF avec effet hover -->
+    <div class="mb-4">
+      <img src="imagee/logo1.png" class="img-fluid rounded shadow hover-scale" alt="ANEF" style="max-width:180px;">
+    </div>
+
+    <!-- Vidéo YouTube intégrée -->
+    <div class="ratio ratio-16x9 mb-4 position-relative">
+      <iframe src="https://www.youtube.com/embed/5rAZAuAeFEM" title="ANEF et UNCCD COP16" allowfullscreen class="rounded shadow"></iframe>
+      <!-- Overlay Play -->
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <span class="btn btn-light btn-lg rounded-circle shadow" style="opacity:0.8;">
+        </span>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <p class="mt-3 text-muted fs-5">
+      Partenaire officiel du COP16, l’Agence Nationale des Eaux et Forêts (ANEF) soutient les initiatives pour la protection de l’environnement et la lutte contre la désertification.
+    </p>
+
+    <!-- Bouton site officiel ANEF -->
+    <a href="https://ma.linkedin.com/company/anef-maroc" target="_blank" class="btn btn-primary btn-lg mt-3">
+      Découvrir Linkedin ANEF
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 UNCCD COP16 Riyadh | AGENCE NATIONALE DES EAUX ET FORETS</p>
+</footer>
+
+
+
